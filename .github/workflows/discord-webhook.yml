@@ -1,2 +1,9 @@
-- name: discord-webhook
-  uses: johnnyhuy/actions-discord-git-webhook@v1.0.4
+git:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+
+    - name: Run Discord Webhook
+      uses: Sniddl/discord-commits@v1.6
+      with:
+        webhook_url: ${{ secrets.WEBHOOK_DISCORD }}
