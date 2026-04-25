@@ -1,3 +1,7 @@
+name: Notificacao Discord
+
+on: [push]
+
 jobs:
     git:
       runs-on: ubuntu-latest
