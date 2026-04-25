@@ -3,15 +3,15 @@ print("Projeto Calculadora")
 def main():
     a = 1
     b = 2
-    
+
     print("Escolha a operação desejada:")
     print("1 - Soma")
     print("2 - Subtração")
     print("3 - Multiplicação")
     print("4 - Divisão")
-    
+
     operacao = "3"
-    
+
     if operacao == "4" and b == 0:
         print("Erro: divisão por zero")
     elif operacao == "1":
